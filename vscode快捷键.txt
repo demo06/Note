@@ -1,5 +1,8 @@
-Alt+上/下                   调换位置
-Alt+shift+鼠标左键           多行编辑
+alt+上/下                   调换位置
+alt+shift+上/下             复制多行
+alt+shift+鼠标左键           多行编辑
 ctrl+左/右                  至下一个单词
 ctrl+ }                     向右缩进
-!                           生成HTML 5标准网页框架
+ctrl+d                      选中当前开始结束标签
+alt+ctrl+o                  在浏览器中预览网页(安装插件open后使用)
+!                           生成HTML 5标准网页框架\
