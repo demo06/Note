@@ -1,2 +1,4 @@
-Alt+↑ / ↓           复制一行
-Alt+shift+左键      竖排选中
+Alt+上/下                   调换位置
+Alt+shift+鼠标左键           多行编辑
+ctrl+左/右                  至下一个单词
+ctrl+ }                     向右缩进
