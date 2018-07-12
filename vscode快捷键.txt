@@ -9,3 +9,4 @@ alt+ctrl+o                  在浏览器中预览网页(安装插件open后使�
 !                           生成HTML 5标准网页框架
 alt+L                       同时编辑多个属性
 ctrl+/                      注释代码
+ctrl+shift+alt+z            自动换行
