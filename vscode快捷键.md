@@ -17,10 +17,10 @@ ctrl+shift+alt+z  | 自动换行(原始快捷键为alt+z,冲突后自定义为�
 
 
 **VS code 部分插件同步**
-Easy LESS     
-HTML CSS Support
-JS-CS-HTML Formatter
-open
-path Intellinsense
-vscode icons
-vscode pdf
+Easy LESS       
+HTML CSS Support  
+JS-CS-HTML Formatter  
+open  
+path Intellinsense  
+vscode icons  
+vscode pdf  
