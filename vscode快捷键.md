@@ -16,7 +16,7 @@ ctrl+/  | 注释代码
 ctrl+shift+alt+z  | 自动换行(原始快捷键为alt+z,冲突后自定义为这个)
 
 
-**VS code 部分插件同步**
+**VS code 部分插件同步**  
 Easy LESS       
 HTML CSS Support  
 JS-CS-HTML Formatter  
