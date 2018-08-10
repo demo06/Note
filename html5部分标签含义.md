@@ -30,20 +30,24 @@
 \<iframe> | 内联标签
 
 **部分属性含义**  
+
+
 属性 | 含义  
 ---: | :---
 rowspan | 竖排合并
 colspan | 横排合并
 border | 表格边框
 target | 链接打开方式 
-_blank | 在新标签打开 
-_self | 在当前页面打开
+\_blank | 在新标签打开 
+\_self | 在当前页面打开
 readonly | 只读模式
 disable | 不可编辑
 checked | 默认被选中
 multiple | 多选(一般用于下拉列表)
 
 **快速生成标签**  
+
+
 :--- | :---
 ul>li*5 | 快速生成5个有序列表li标签
 input:text | 快速生成一个text类型的input标签
