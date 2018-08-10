@@ -42,6 +42,7 @@ checked | 默认被选中
 multiple | 多选(一般用于下拉列表)
 
 **快速生成标签**  
+:--- | :---
 ul>li*5 | 快速生成5个有序列表li标签
 input:text | 快速生成一个text类型的input标签
 
