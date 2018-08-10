@@ -35,7 +35,7 @@ colspan | 横排合并
 border | 表格边框
 target | 链接打开方式 
  \_blank | 在新标签打开 
- \_self  |  在当前页面打开
+ \_self | 在当前页面打开
 readonly | 只读模式
 disable | 不可编辑
 checked | 默认被选中
