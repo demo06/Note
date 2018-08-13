@@ -17,10 +17,14 @@ ctrl+shift+alt+z  | 自动换行(原始快捷键为alt+z,冲突后自定义为�
 
 
 **VS code 部分插件同步**  
-Easy LESS       
-HTML CSS Support  
-JS-CS-HTML Formatter  
-open  
-path Intellinsense  
-vscode icons  
-vscode pdf  
+插件名称|插件功能
+---:|:---
+Easy LESS| 自动编译less文件      
+HTML CSS Support  |   HTML CSS支持
+JS-CS-HTML Formatter  |  JS-CS-HTML自动格式化
+open  |  浏览器打开网页
+path Intellinsense  |  路径选择
+vscode icons  |  vscode图标工具
+vscode pdf  |  PDF预览工具 
+markdownlint|Markdown提示
+Markdown Preview Enhanced|Markdown实时预览
