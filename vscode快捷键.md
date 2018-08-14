@@ -28,3 +28,4 @@ vscode icons  |  vscode图标工具
 vscode pdf  |  PDF预览工具 
 markdownlint|Markdown提示
 Markdown Preview Enhanced|Markdown实时预览
+gitignore|设置忽略文件
