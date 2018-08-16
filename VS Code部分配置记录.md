@@ -30,4 +30,4 @@ markdownlint|Markdown提示
 Markdown Preview Enhanced|Markdown实时预览
 gitignore|设置忽略文件
 Translate to Chinese | 翻译成中文
-Code Runner  |  直接在IDE中运行代码
+Code Runner  |  直接在VS中运行python和js代码
