@@ -1,5 +1,5 @@
 
-####
+#### VS部分快捷键记录
 键值 | 作用
 :---: | :---
 ctrl+左/右 | 至下一个单词
@@ -13,13 +13,13 @@ alt+ctrl+o  |  在浏览器中预览网页(安装插件open后使用)
 !   |  生成HTML 5标准网页框架
 alt+L  |  同时编辑多个属性
 ctrl+/  | 注释代码
-ctrl+shift+alt+z  | 自动换行(原始快捷键为alt+z,冲突后自定义为这个)
+ctrl+shift+alt+z  | 自动换行(原始快捷键为alt+z,冲突后自定义为这个)translate to chinese
 
+#### **VS Code 部分插件同步**  
 
-**VS code 部分插件同步**  
 插件名称|插件功能
 ---:|:---
-Easy LESS| 自动编译less文件      
+Easy LESS| 自动编译less文件
 HTML CSS Support  |   HTML CSS支持
 JS-CS-HTML Formatter  |  JS-CS-HTML自动格式化
 open  |  浏览器打开网页
@@ -29,3 +29,4 @@ vscode pdf  |  PDF预览工具
 markdownlint|Markdown提示
 Markdown Preview Enhanced|Markdown实时预览
 gitignore|设置忽略文件
+Translate to Chinese | 翻译成中文
