@@ -1,5 +1,5 @@
+#### **VS部分快捷键记录**
 
-#### VS部分快捷键记录
 键值 | 作用
 :---: | :---
 ctrl+左/右 | 至下一个单词
@@ -30,3 +30,4 @@ markdownlint|Markdown提示
 Markdown Preview Enhanced|Markdown实时预览
 gitignore|设置忽略文件
 Translate to Chinese | 翻译成中文
+Code Runner  |  直接在IDE中运行代码
