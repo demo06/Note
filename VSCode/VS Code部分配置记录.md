@@ -17,17 +17,17 @@ ctrl+shift+alt+z  | 自动换行(原始快捷键为alt+z,冲突后自定义为�
 
 #### **VS Code 部分插件同步**  
 
-插件名称|插件功能
----:|:---
-Easy LESS| 自动编译less文件
-HTML CSS Support  |   HTML CSS支持
-JS-CS-HTML Formatter  |  JS-CS-HTML自动格式化
-open  |  浏览器打开网页
-path Intellinsense  |  路径选择
-vscode icons  |  vscode图标工具
-vscode pdf  |  PDF预览工具 
-markdownlint|Markdown提示
-Markdown Preview Enhanced|Markdown实时预览
-gitignore|设置忽略文件
-Translate to Chinese | 翻译成中文
-Code Runner  |  直接在VS中运行python和js代码
+|插件名称|插件功能|
+|---:|:---|
+|Code Runner  |  直接在VS中运行python和js代码|
+|Easy LESS| 自动编译less文件|
+|HTML CSS Support  |   HTML CSS支持|
+|JS-CS-HTML Formatter  |  JS-CS-HTML自动格式化|
+|Markdown Preview Enhanced|Markdown实时预览|
+|Translate to Chinese | 翻译成中文|
+|gitignore|设置忽略文件|
+|markdownlint|Markdown提示|
+|open  |  浏览器打开网页|
+|path Intellinsense  |  路径选择|
+|vscode icons  |  vscode图标工具|
+|vscode pdf  |  PDF预览工具|
