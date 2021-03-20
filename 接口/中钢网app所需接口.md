@@ -1,15 +1,21 @@
-#中钢网APP二期需求所需接口
+# 中钢网APP二期需求所需接口
 
-##1.获取交易明细接口
+## 1.接口列表
++ [**获取交易列表接口**](#2.-获取交易列表接口)
+
++ [**获取交易明细接口**](#3.-获取交易明细接口)
 
 
-###1.1 接口名称
+## 2. 获取交易列表接口
+
+
+### 2.1 接口名称
 ```
 (GET)
 api/Account/getTradingRecordList
 ```
 
-###1.2 请求参数
+### 2.2 请求参数
 | 参数名称        | 参数类型 | 描述                          |
 |:----------------|:---------|:------------------------------|
 | memberID        | int      | 用户ID                        |
@@ -18,7 +24,7 @@ api/Account/getTradingRecordList
 | transactionTime | date     | 交易日期                      |
 | pageSize        | int      | 条数                          |
 | pageIndex       | int      | 页码                          |
-### 1.3 响应参数
+### 2.3 响应参数
 | 参数名称        | 参数类型 | 描述                    |
 |:----------------|:---------|:------------------------|
 | tradingMonth    | date     | 交易月份                |
@@ -29,7 +35,7 @@ api/Account/getTradingRecordList
 | ---dealTime     | String   | 成交时间                |
 | ---dealType     | int      | 交易类型  0-充值 1-交易 |
 | ---amount       | String   | 金额                    |
-### 1.3.1 响应示例
+### 2.3.1 响应示例
 ```
 {
   "statuscode": 200,
@@ -55,5 +61,48 @@ api/Account/getTradingRecordList
               ]
         
           }
+}
+```
+
+## 3. 获取交易详情接口
+
+
+### 3.1 接口名称
+```
+(GET)
+api/Account/getTradingDetail
+```
+
+### 3.2 请求参数
+| 参数名称      | 参数类型 | 描述   |
+|:--------------|:---------|:-------|
+| memberID      | int      | 用户ID |
+| transactionID | int      | 交易ID |
+### 3.3 响应参数
+| 参数名称    | 参数类型 | 描述                        |
+|:------------|:---------|:----------------------------|
+| dealType    | int      | 交易类型      0-充值 1-交易 |
+| dealDate    | date     | 交易时间                    |
+| dealAmount  | String   | 成交金额                    |
+| dealState   | String   | 交易状态                    |
+| productName | String   | 产品名称                    |
+| supperlier  | String   | 供应商名称                  |
+| payment     | String   | 支付方式                    |
+| dealOrderId | int      | 交易单号                    |
+### 3.3.1 响应示例
+```
+{
+  "statuscode": 200,
+  "result": 0,
+  "msg": "获取成功",
+  "data": {
+      "dealType":1
+      "dealDate":2021-03-07 09:43:36,
+      "dealAmount":"-50400.00",
+      "dealState":"付款完成",
+      "productName":"螺纹钢、盘螺",
+      "supperlier":"中钢网自营官方旗舰店",
+      "payment":"余额支付",
+      "dealOrderId":20212226700028,
 }
 ```
