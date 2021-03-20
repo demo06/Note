@@ -1,6 +1,6 @@
 Git命令大全
 |命令|解释|
-|---|---|
+|:---:|:---:|
 |git init                                                  | 初始化本地git仓库（创建新仓库）
 |git config --global user.name "xxx"                       | 配置用户名
 |git config --global user.email "xxx@xxx.com"              | 配置邮件
@@ -53,6 +53,7 @@ Git命令大全
 |git checkout v2.0                                         | 检出版本v2.0
 |git checkout -b devel origin/develop                      | 从远程分支develop创建新本地分支devel并|检出|
 |git checkout -- README                                    | 检出head版本的README文件（可用于修改错|误回退）|
+|git cherry-pick <commitHash>                                  | ，就是将指定的提交（commit）应用于其他分支。|
 |git merge origin/master                                   | 合并远程master分支至当前分支
 |git cherry-pick ff44785404a8e                             | 合并提交ff44785404a8e的修改
 |git push origin master                                    | 将当前分支push到远程master分支
