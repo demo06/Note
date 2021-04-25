@@ -1,12 +1,12 @@
 # Selenium笔记
 
-功能介绍
+## 功能介绍
 
 - 基于浏览器自动化的模块
 - 弊端:效率低
 - 在使用其他库无法抓取网页时可以使用selenium
 
-安装
+## 安装
 
 ```python
 pip install selenium 
@@ -18,7 +18,7 @@ pip install selenium
 from selenium import webdriver
 ```
 
-基础使用
+## 基础使用
 
 ```python
 #基于浏览器的驱动程序实例化一个浏览器对象
@@ -48,18 +48,18 @@ bro.switch_to.frame('frameId')
 div_tag=bro.find_element_by_xpath('xpath语法')
 ```
 
-动作链ActionChains
+### 动作链ActionChains
 
 - 一系列连续的动作
 - 例如图片验证码滑动
 
-导入动作链
+#### 导入动作链
 
 ```python
 from selenium.webdriver import ActionChains
 ```
 
-使用
+ #### 使用
 
 ```python
 action=ActionChains(bro)
@@ -72,7 +72,7 @@ for i in range(6):
 action.release()#释放action
 ```
 
-如何规避检测selenium
+#### 如何规避检测selenium
 
 - 使用selenium接管浏览器
 
@@ -97,7 +97,7 @@ action.release()#释放action
   browser =webdriver.Chrome(executable_path=chrome_dricer,chrome_options=chrome_options)
   ```
 
-无头浏览器(无可视化界面的浏览器)
+##### 无头浏览器(无可视化界面的浏览器)
 
 - 谷歌无头浏览器
 - phantomJs
@@ -108,7 +108,7 @@ chrome_options.add_argument('--headless')
 chrome_options.add_argument('--disable-gpu')
 ```
 
-webdriver截图
+##### webdriver截图
 
 ```
 browser.save_screenshot('jietu.png')

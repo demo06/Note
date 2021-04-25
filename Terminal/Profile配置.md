@@ -4,10 +4,12 @@
 
 ```json
 function zgw {  cd 'H:\ZgwWorkSpace\zhonggangwang\ZhongGangWang' }
+function sql{  cd 'H:\ASWorkSpace\pos-pay' }
 function asws { cd 'H:\ASWorkSpace' }
 function pyws { cd 'H:\pyProject' }
 function ideaws { cd 'H:\IdeaProject' }
-function notes {  cd 'H:\Notes'  }
+function wxws{ cd 'H:wxProject' }
+function notes {  cd 'H:\Note'  }
 function wlb {  cd 'H:\huaweiyun\Wlb_Android\LogisticsOfLiuZonghui'  }
 function apidoc {  cd 'H:\ApiDoc'  }
 function profile {  start 'C:\Users\lyf\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'  }
@@ -18,7 +20,6 @@ function idea {  start 'E:\IntelliJ IDEA 2020.3.3\bin\idea64.exe' }
 function wx{  start 'E:\SuperWeChatPC-1.1.3\bin\WeChat1.exe' }
 function fileres{  start 'C:\Users\lyf\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\File Explorer.lnk' }
 function Typora {  start 'E:\Typora\Typora.exe' }
-
 
 $PSDefaultParameterValues['*:Encoding'] = 'utf8'
 set-alias vim "E:\Vim\vim82\vim.exe" # 此处为vim的安装路径
