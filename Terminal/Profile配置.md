@@ -9,8 +9,8 @@ function asws { cd 'H:\ASWorkSpace' }
 function pyws { cd 'H:\pyProject' }
 function ideaws { cd 'H:\IdeaProject' }
 function wxws{ cd 'H:wxProject' }
-function notes {  cd 'H:\Note'  }
-function wlb {  cd 'H:\huaweiyun\Wlb_Android\LogisticsOfLiuZonghui'  }
+function note {  cd 'H:\Note'  }
+function wlb {  cd 'H:\ZgwWorkSpace\Wlb_Android\LogisticsOfLiuZonghui'  }
 function apidoc {  cd 'H:\ApiDoc'  }
 function profile {  start 'C:\Users\lyf\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'  }
 function as {  start 'C:\Program Files\Android\Android Studio\bin\studio64.exe'  }
