@@ -203,7 +203,7 @@ user.setName("zhangsan");
 
 kt
 
-```kotlin
+​```kotlin
 //空参构造函数
 constructor(){}
 //带参构造函数
@@ -360,5 +360,73 @@ int[] codeList=new int[]{1,2,3,4}
 
       
 
-01:43:21
+## 枚举
 
+kt
+
+``` kotlin
+enum class State{
+    PLAYBACK{
+       override fun  StateName():String{
+           return "有回放"
+       }
+    },
+    LIVE{
+       override fun  StateName():String{
+           return "正在直播"
+       }
+    },
+    WAIT{
+       override fun  StateName():String{
+           return "等待中"
+       }
+    }
+    abstract fun stateName():String
+}
+```
+
+java
+
+```java
+public enum State{
+    PLAYBACK{
+       public String StateName(){
+           return "有回放"
+       }
+    },
+    LIVE{
+       public String StateName(){
+           return "正在直播"
+       }
+    },
+    WAIT{
+       public String StateName(){
+           return "等待中"
+       }
+    }
+    public abstract String stateName();
+}
+```
+
+## 注解
+
+kt 
+
+```kotlin
+annotation class className(){}
+```
+
+java
+
+```java
+@interface
+public class className(){}
+```
+
+
+
+
+
+[Kotlin 上手 (qq.com)](https://ke.qq.com/webcourse/404167/100481987#taid=3410354357283527&vid=5285890793361958565)
+
+01:54:35
