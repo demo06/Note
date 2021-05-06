@@ -114,19 +114,38 @@ String name;
 View v=(ImageView)v;
 ```
 
-## 大于等于
+## in关键字
 
-kt 
+- 当处于if或when 中时代表处于某个区间
 
-```kotlin
-if(code in 200..299)
-```
+  kt 
 
-java
+  ```kotlin
+  if(code in 200..299)
+  ```
 
-```java
-if(code >= 200 &&code <300 )
-```
+  java
+
+  ```java
+  if(code >= 200 &&code <300 )
+  ```
+
+
+- 当处于for循环中时代替:冒号使用
+
+  kt
+
+  ```kotlin
+  for(Lesson lesson:lessons){...}
+  ```
+
+  java
+
+  ```java
+  for(lesson in lessons){...}
+  ```
+
+  
 
 ## 字符串拼接
 
@@ -166,6 +185,7 @@ when(code){
 
 - kotlin中调用其他类时,如果调用kotlin类则使用::即可
 - 如果在kotlin中调用java类,则需要 在kotlin类后使用.java
+- kotlin中创建对象可以省略new关键字
 
 ​	kotlin
 
@@ -198,12 +218,13 @@ java
 ```java
 User user= new User();
 user.setName("zhangsan");
+```
 
 ## 构造函数
 
 kt
 
-​```kotlin
+```kotlin
 //空参构造函数
 constructor(){}
 //带参构造函数
@@ -305,43 +326,46 @@ int[] codeList=new int[]{1,2,3,4}
       ```kotlin
       class BaseApplication:Application(){
           companion object{
+              val valName="xxx"
           	fun(){...}
       	}
       }
       
       ```
-
+      
       kt调用时
-
+      
       BaseApplication.fun()
-
+      
+      BaseApplication.valnaem
+      
       java调用时使用
-
+      
       ```kotlin
       BaseApplication.Companion.fun()
       ```
-
+  
   - 第四种
-
+  
     - 通过注解实现(这个注解只能在object声明的类或伴生对象中使用)
-
+  
       ```kotlin
       object className{
           @JvmStatic
           fun1(){...}
       }
       ```
-
+  
       java调用
-
+  
       ```java
       ClassName.fun1();
       ```
-
+  
   - 第五种
-
+  
     - 通过在文件头添加注解实现(该注解表示针对该文件生成在Jvm中的引用名)
-
+  
       ```kotlin
       @file:JvmName(Utils)
       package xxx
@@ -351,13 +375,13 @@ int[] codeList=new int[]{1,2,3,4}
           fun1(){...}
       }
       ```
-
+  
       java调用
-
+  
       ```java
       Utils.fun1();
       ```
-
+  
       
 
 ## 枚举
@@ -423,10 +447,85 @@ java
 public class className(){}
 ```
 
+## 编译器常量
 
+- 静态常量
 
+kt
 
+```kotlin
+//编译时值就确定了的常量
+companion object{
+    const val valName="ssdsa"
+}
+```
 
-[Kotlin 上手 (qq.com)](https://ke.qq.com/webcourse/404167/100481987#taid=3410354357283527&vid=5285890793361958565)
+java 
 
-01:54:35
+```java
+private static final String valName="ssdsa"
+```
+
+## 匿名内部类
+
+- 匿名内部类使用 object来声明
+
+kt
+
+```kotlin
+private val type =object:TypeToken<List<Lesson>>{}.type
+```
+
+java
+
+```java
+private final Type type =new TypeToken<List<Lesson>>{}.getType();
+```
+
+## 调用外部类属性
+
+kt
+
+```kotlin
+class LessonPresenter{
+    
+    ptivate var lessons:List<Lesson>=ArrayList()
+    
+    fun fetchData(){   
+        HttpClient.get(XXX,type,object:EntityCallBack<List<Lesson>>{
+            fun onSuccess(entity:List<Lesson>){
+                this@LessonPresenter.lessons=entity
+            }
+        })
+    }
+}
+```
+
+java 
+
+```java
+public class LessonPresenter{
+    
+   ptivate List<Lesson>lessons:=ArrayList<>()
+    
+   public void fetchData(){   
+        HttpClient.get(XXX,type,new EntityCallBack<List<Lesson>>{
+            public void onSuccess(List<Lesson> entity){
+                LessonPresenter.this.lessons=entity
+            }
+        })
+    }
+}
+```
+
+## 可见性修饰符
+
+- 一般用于SDK开发时隐藏该类同(@hide)
+- 防止跨包访问
+
+kt 
+
+```kotlin
+internal class Lesson{xxx}
+```
+
